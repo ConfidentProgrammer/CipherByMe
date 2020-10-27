@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+ <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="heading">
+   <h1><span class="green">Encrypt </span>and <span class="red">Decrypt</span></h1>
+ </div>
+ <div class="main_container">
+   <table>
+     <tr>
+       <th>Decrypted Message: </th>
+        <td><textarea class="rarea" id="enc" rows="4" cols="22"></textarea></td>
+      </tr>
+
+      <tr>
+        <th>Key: </th>
+        <td><input id="key" required="required" placeholder="from 1 to 26" type="number"></td>
+      </tr>
+      <tr>
+        <th>Encrypted Message: </th>
+      <td><textarea class="garea" rows="4" cols="22" id="dec"></textarea></td>
+    </tr>
+    <tr>
+      <td></td>
+       <td colspan="2"><input class="btn-green" type="Submit" value="Encrypt" onclick="return encrypt();" id="dec_btn">
+
+<input  type="Submit" class="btn-red" onclick="return decrypt();" value="Decrypt" id="dec_btn"></td>
+
+    </tr>
+  </table>
+
+</div>
+<script type="text/javascript" src="app.js">
+
+</script>
+  </body>
+</html>
